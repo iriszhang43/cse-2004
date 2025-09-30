@@ -1,0 +1,123 @@
+nav a {
+    color: magenta;
+}
+
+body {
+    margin: 2rem;
+    font-family: "gridlite-pe-variable", sans-serif;
+    font-variation-settings: "ELSH" 3, "RECT" 1, "BACK" 1, "wght" 900;
+    background-color: cyan;
+}
+
+.left {
+    text-align: left;
+    animation-name: moveright;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.right {
+    text-align: right;
+    animation-name: moveleft;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.title {
+    position: fixed;
+    z-index: 6;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+
+h1 {
+    font-variation-settings: "ELSH" 3, "RECT" 1, "BACK" 1, "wght" 900;
+    letter-spacing: 1.3rem;
+    color: magenta;
+}
+
+h3 {
+    letter-spacing: 1.3rem;
+    font-variation-settings: "ELSH" 3, "RECT" 1, "BACK" 1, "wght" 900;
+    color: magenta;
+    margin: 1.7rem;
+}
+
+.paragraphs {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-transform: lowercase;
+    font-variation-settings: "ELSH" 3, "RECT" 1, "BACK" 1, "wght" 250;
+    letter-spacing: 1.5rem;
+    color: yellow;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        font-variation-settings: "ELSH" 3, "RECT" 350, "BACK" 700, "wght" 350;
+    }
+
+    25% {
+        font-variation-settings: "ELSH" 3, "RECT" 20, "BACK" 1, "wght" 250;
+    }
+
+    50% {
+        font-variation-settings: "ELSH" 3, "RECT" 250, "BACK" 900, "wght" 250;
+
+    }
+
+    75% {
+        font-variation-settings: "ELSH" 3, "RECT" 1, "BACK" 120, "wght" 250;
+
+    }
+
+    100% {
+        font-variation-settings: "ELSH" 3, "RECT" 150, "BACK" 500, "wght" 550;
+    }
+}
+
+@keyframes moveright {
+    0% {
+        text-align: left;
+    }
+
+    50% {
+        text-align: right;
+    }
+
+    100% {
+        text-align: left;
+    }
+}
+
+@keyframes moveleft {
+    0% {
+        text-align: right;
+    }
+
+    50% {
+        text-align: left;
+    }
+
+    100% {
+        text-align: right;
+    }
+}
+
+p:hover {
+    transition: all 1s ease-in-out;
+    animation: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    color: magenta;
+    font-variation-settings: "ELSH" 3, "RECT" 1, "BACK" 1, "wght" 900;
+}
